@@ -1,10 +1,11 @@
 import React from 'react'
 import '../assets/Style/Dashboard.scss'
-import { BsSearch, BsBell, BsPower, BsListStars, BsBriefcase } from 'react-icons/bs';
-import { CiMail } from 'react-icons/ci';
+import { BsSearch, BsBell, BsPower, BsListStars, BsBriefcase, BsGraphUp } from 'react-icons/bs';
+import { CiMail, CiSettings } from 'react-icons/ci';
 import { AiOutlineMenuUnfold } from 'react-icons/ai';
 import { RiDashboardFill } from 'react-icons/ri';
 import { TbUsers } from 'react-icons/tb';
+import DashboardSideBar from '../components/DashboardSideBar';
 
 
 
@@ -12,110 +13,11 @@ import { TbUsers } from 'react-icons/tb';
 export default function Dashboard() {
   return (
     <div>
-      <input type="checkbox" id="menu-toggle"/>
-    <div class="sidebar">
-        <div class="side-header">
-            <h4>Resolve<span>Now</span></h4>
-        </div>
-        
-        <div class="side-content">
-            <div class="profile">
-        {/* profile info here */}
-            </div>
-
-            <div class="side-menu">
-                <ul>
-                    <li>
-                       <a href="" class="active">
-                            <span><RiDashboardFill style={{color: "#fff", fontSize: "14px"}}/></span>
-                            <small>Dashboard</small>
-                        </a>
-                    </li>
-                    <li>
-                       <a href="">
-                            <span><BsListStars style={{color: "#fff", fontSize: "14px"}}/></span>
-                            <small>Tickets</small>
-                        </a>
-                    </li>
-                    <li>
-                       <a href="">
-                            <span><TbUsers style={{color: "#fff", fontSize: "14px"}}/></span>
-                            <small>Users</small>
-                        </a>
-                    </li>
-                    <li>
-                       <a href="">
-                       <span><TbUsers style={{color: "#fff", fontSize: "14px"}}/></span>
-                            <small>Teams</small>
-                        </a>
-                    </li>
-                    <li>
-                       <a href="">
-                            <span><BsBriefcase style={{color: "#fff", fontSize: "14px"}}/></span>
-                            <small>SLA</small>
-                        </a>
-                    </li>
-                    <li>
-                       <a href="">
-                            <span class="las la-tasks"></span>
-                            <small>System Logs</small>
-                        </a>
-                    </li>
-                    <li>
-                       <a href="">
-                            <span class="las la-clipboard-list"></span>
-                            <small>Reports</small>
-                        </a>
-                    </li>
-                    <li>
-                       <a href="">
-                            <span class="las la-shopping-cart"></span>
-                            <small>Settings</small>
-                        </a>
-                    </li>
-                 
-
-                </ul>
-            </div>
-        </div>
-    </div>
+     <DashboardSideBar/>
     
     <div class="main-content">
-        
-        <header>
-            <div class="header-content">
-                <label for="menu-toggle">
-                    <span><AiOutlineMenuUnfold/></span>
-                </label>
                 
-                <div class="header-menu">
-                    <label for="">
-                        <span><BsSearch style={{fontSize: "16px"}}/></span>
-                    </label>
-                    
-                    <div class="notify-icon">
-                        <span><CiMail style={{fontSize: "16px"}}/></span>
-                        <span class="notify">4</span>
-                    </div>
-                    
-                    <div class="notify-icon">
-                        <span><BsBell style={{fontSize: "16px"}}/></span>
-                        <span class="notify">3</span>
-                    </div>
-                    
-                    <div class="user">
-                        {/* <div class="bg-img" style="background-image: url(img/1.jpeg)"></div> */}
-                        
-                        <span><BsPower/></span>
-                        <span>Logout</span>
-                    </div>
-                </div>
-            </div>
-        </header>
-        
-        
         <main>
-            
             <div class="page-header">
                 <h1>Dashboard</h1>
                 <small>Home / Dashboard</small>

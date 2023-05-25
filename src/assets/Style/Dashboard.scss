@@ -32,7 +32,7 @@
 }
 
 .side-header {
-    box-shadow: 0px 5px 5px -5px;
+    border-bottom: 1px solid grey;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -107,7 +107,7 @@
 }
 
 .side-menu ul {
-    text-align: center;
+    // text-align: center;
 }
 
 .side-menu a {
@@ -135,7 +135,7 @@
 
 .side-menu a small {
     color: #899DC1;
-    font-size: 0.8em;
+    font-size: 0.9em;
 
 }
 
